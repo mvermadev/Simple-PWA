@@ -25,7 +25,6 @@ self.addEventListener('fetch', function (event) {
                 return res;
             }
             else {
-                console.log(event.request)
                 return fetch(event.request);
             }
         }).catch(err => console.error(err))
