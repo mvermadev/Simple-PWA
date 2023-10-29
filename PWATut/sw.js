@@ -1,5 +1,5 @@
 self.addEventListener('install', function (event) {
-    console.log("SW installed");
+    console.log("SW Installed");
     event.waitUntil(caches.open("static").then(function (cache) {
         cache.addAll([
             './',
@@ -18,6 +18,7 @@ self.addEventListener('activate', function () {
 });
 
 self.addEventListener('fetch', function (event) {
+    console.log("SW Fetched");
     event.respondWith(
         caches.match(event.request).then(function (res) {
             if (res) {
