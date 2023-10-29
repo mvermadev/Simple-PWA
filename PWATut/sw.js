@@ -19,13 +19,13 @@ self.addEventListener('activate', function () {
 
 self.addEventListener('fetch', function (event) {
     event.respondWith(
-        caches.match(event.request).then(async function (res) {
+        caches.match(event.request).then(function (res) {
             if (res) {
                 return res;
             }
             else {
                 console.log(event.request)
-                return await fetch(event.request);
+                return fetch(event.request);
             }
         }).catch(err => console.error(err))
     );
