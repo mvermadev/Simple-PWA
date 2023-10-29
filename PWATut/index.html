@@ -1,121 +1,195 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PWA</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="manifest" href="./manifest.json">
+   <meta charset="UTF-8">
+   <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>PWA</title>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="manifest" href="./manifest.json">
 
 </head>
+
 <body>
+   <div id="header">
+      <h1> Pure-PWA </h1>
+      <h4> FAST | RELIABLE | ENGAGING </h4>
+      <div id="details">
+         <button id="what">PWA</button>
+         <button id="build">Dive</button>
+      </div>
+   </div>
+   <div id="main">
+      <div id="fast">
+         <h2>fast</h2>
+      </div>
+      <article>
+         <h4>
+            53% of users will abandon a site if it takes longer than 3 seconds to load! And once loaded, users expect
+            them to be fast—no
+            janky scrolling or slow-to-respond interfaces.
+         </h4>
+      </article>
 
-        <div id="header">
-                <h1> PWA is an FutureTechnology! </h1>
-                <h4> FAST | RELIABLE | ENGAGING </h4>
-                <div id="details">
-                    <button id="what">PWA?</button>
-                    <button id="build">Dive</button>
-                </div>
-            </div>
+      <div id="reliable">
+         <h2>reliable</h2>
+      </div>
+      <article>
+         <h4>
+            When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly,
+            regardless of the network state.
 
-    <div id="main">
-   <div id="fast"> <h2>fast</h2> </div>  
- <article>   <h4>
-    53% of users will abandon a site if it takes longer than 3 seconds to load! And once loaded, users expect them to be fast—no
-   janky scrolling or slow-to-respond interfaces.
-</h4> </article>
+            A service worker, written in JavaScript, is like a client-side proxy and puts you in control of the cache
+            and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on
+            the network, ensuring an instant and reliable experience for your users.
+         </h4>
+      </article>
 
-   <div id="reliable"> <h2>reliable</h2></div>  
-   <article>   <h4>
-    When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly, regardless of the network state.
+      <div id="engaging">
+         <h2>engaging</h2>
+      </div>
+      <article>
+         <h4>
+            Progressive Web Apps are installable and live on the user's home screen, without the need for an app store.
+            They offer an
+            immersive full screen experience with help from a web app manifest file and can even re-engage users with
+            web push notifications.
+            The Web App Manifest allows you to control how your app appears and how it's launched. You can specify home
+            screen icons,
+            the page to load when the app is launched, screen orientation, and even whether or not to show the browser
+            chrome.
+         </h4>
+      </article>
+   </div>
 
-    A service worker, written in JavaScript, is like a client-side proxy and puts you in control of the cache and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on the network, ensuring an instant and reliable experience for your users.
-</h4> </article>
+   <div id="next">
 
-   <div id="engaging"><h2>engaging</h2></div> 
-   <article>   <h4>
-    Progressive Web Apps are installable and live on the user's home screen, without the need for an app store. They offer an
-            immersive full screen experience with help from a web app manifest file and can even re-engage users with web push notifications.
-            The Web App Manifest allows you to control how your app appears and how it's launched. You can specify home screen icons,
-            the page to load when the app is launched, screen orientation, and even whether or not to show the browser chrome.
-</h4> </article>
-</div>
+      <h3>What is PWA?</h3>
+      <h4> “Progressive Web App (PWA) is a term used to denote a new software development methodology. Unlike
+         traditional applications, progressive web apps are a hybrid of regular web pages (or websites) and a mobile
+         application. This new application model attempts to combine features offered by most modern browsers with the
+         benefits of mobile experience.”
+         <br> <br>
+         This is what wikipedia says about PWA. Well, this might seem a bit vague or even contentious. So let’s look at
+         PWA in an informal way.
+         <br> <br>
+         If ever the best of web and the best of apps had a clone child — it is PWA. Or else, it’s just that the web
+         page has taken all the ‘right vitamins’ so that it can behave more like an app downloaded from the App Store/
+         Play Store. It starts as a normal web page in a browser, and as a user explores the webpage, they get the
+         prompt if they would like to “Add to Home Screen”. Once the user gives the thumbs up to this prompt, VOILA! PWA
+         gets added to their home screen. Once open from the home screen, it can even hide the browser UI controls and
+         appear as an app.
+         <br> <br>
+         This is more like a glorified bookmark that has hit the sweet spot between the web and mobile apps. I say this
+         because PWA has managed to bridge the gap in the web. The web has always been thirsty for reliable performance
+         at par with the native apps. It has always yearned for a place in the notification tray and in the home screen
+         just like an app. More than 40% of the users bounce from the websites that take more than 3 seconds to load.
+         PWA is a solution for this “Web Obesity Epidemic” faced by the users.
+         <br> <br>
+         It is all about removing friction and making it easy for the users to get to what they want.
+         <br> <br>
+         The entire credit for this seamless experience should be given to the Service Worker( A script that the browser
+         runs in the background separate from web page), which is the backbone of every PWA. The service workers enable
+         reliable and intelligent caching, background content updating, push notifications and the most attractive
+         offline functionality to prior visited sites. This means that, after the first visit to a website, the site and
+         app will be reliably fast even on flaky networks.
+         <br> <br>
+         But a question could arise here — what about the fast first load with reliable performance? That’s when
+         Accelerated Mobile Pages (AMP) meets service worker. AMP provides reliably fast web components for first load.
+         These components are much faster to load and less data hungry. Websites that use the combo of AMP and Service
+         Worker will provide reliable speed as of native apps. Once the page is loaded the site setups the service
+         worker and assets are cached intelligently. This will always keep the PWA up to date thereby freeing the users
+         from the frequent updates to be done from the App Store.
+      </h4>
+   </div>
 
-<div id="next">
-    
-    <h3>What is PWA?</h3>
-    <h4> “Progressive Web App (PWA) is a term used to denote a new software development methodology. Unlike traditional applications, progressive web apps are a hybrid of regular web pages (or websites) and a mobile application. This new application model attempts to combine features offered by most modern browsers with the benefits of mobile experience.”
-            <br> <br>
-        This is what wikipedia says about PWA. Well, this might seem a bit vague or even contentious. So let’s look at PWA in an informal way.
-        <br> <br>
-    If ever the best of web and the best of apps had a clone child — it is PWA. Or else, it’s just that the web page has taken all the ‘right vitamins’ so that it can behave more like an app downloaded from the App Store/ Play Store. It starts as a normal web page in a browser, and as a user explores the webpage, they get the prompt if they would like to “Add to Home Screen”. Once the user gives the thumbs up to this prompt, VOILA! PWA gets added to their home screen. Once open from the home screen, it can even hide the browser UI controls and appear as an app.
-    <br> <br>
-    This is more like a glorified bookmark that has hit the sweet spot between the web and mobile apps. I say this because PWA has managed to bridge the gap in the web. The web has always been thirsty for reliable performance at par with the native apps. It has always yearned for a place in the notification tray and in the home screen just like an app. More than 40% of the users bounce from the websites that take more than 3 seconds to load. PWA is a solution for this “Web Obesity Epidemic” faced by the users.
-   <br> <br>
-    It is all about removing friction and making it easy for the users to get to what they want.
-   <br> <br>
-    The entire credit for this seamless experience should be given to the Service Worker( A script that the browser runs in the background separate from web page), which is the backbone of every PWA. The service workers enable reliable and intelligent caching, background content updating, push notifications and the most attractive offline functionality to prior visited sites. This means that, after the first visit to a website, the site and app will be reliably fast even on flaky networks.
-   <br> <br>
-    But a question could arise here — what about the fast first load with reliable performance? That’s when Accelerated Mobile Pages (AMP) meets service worker. AMP provides reliably fast web components for first load. These components are much faster to load and less data hungry. Websites that use the combo of AMP and Service Worker will provide reliable speed as of native apps. Once the page is loaded the site setups the service worker and assets are cached intelligently. This will always keep the PWA up to date thereby freeing the users from the frequent updates to be done from the App Store.
-     </h4>
-</div>
+   <div id="dive">
+      <h3> Why is it important ?</h3>
+      <p>
+         It is a myth that the users will happily download the app of every website they visit frequently. According to
+         Comscore Mobile App Report, over 50% of America’s smart phone users download Zero Apps a month. i.e. Gone are
+         the days when the phone is full of apps and people-smart phone honeymoon phase is getting depleted. Each step
+         to download an app reduces 20% of users. PWA reduces the steps between discovery of an app and getting it on
+         the home screen and thereby eliminates friction of getting an app installed. This provides a very fertile
+         ground for businesses to pitch in their PWA.
+         <br> <br>
+         The following three metrics can be highlighted to understand the importance of PWA in moulding the future web.
+         <br> <br>
+         a. Reach : The mobile web audience has grown at a skyrocketing pace over the last few years. Google has
+         reported that Chrome has whooping 1 billion mobile users compared to the erstwhile 400 million users in 2016.
+         As per Comscore’s report the reach of mobile web is 2.5 times more than that of apps, while considering the top
+         1000 sites and apps. This is the reason why the decision of Flipkart, Myntra etc. to abandon their website and
+         be ‘app only’ backfired. If we could provide a better experience to a wider audience, we could surely get a
+         competitive edge over the others.
+         <br> <br>
+         b. Acquisition : Another serious concern faced by the mobile apps are their user discoverability compared to
+         websites. The user acquisition cost of web will be 10 times cheaper than that of native apps. With more
+         exposure and low friction for on-boarding, PWA is likely to acquire more users at very less expense.
+         <br> <br>
+         c. Conversion : The seamless end to end user experience even with flaky networks provided by PWA improves the
+         number of successful conversions. Flipkart launched their PWA ‘Flipkart-lite’, which they claim to have
+         delivered an increase in the conversion rate by 70% with lower acquisition cost.
 
-<div id="dive">
-    <h3> Why is it important ?</h3>
-    <p>    
-        It is a myth that the users will happily download the app of every website they visit frequently. According to Comscore Mobile App Report, over 50% of America’s smart phone users download Zero Apps a month. i.e. Gone are the days when the phone is full of apps and people-smart phone honeymoon phase is getting depleted. Each step to download an app reduces 20% of users. PWA reduces the steps between discovery of an app and getting it on the home screen and thereby eliminates friction of getting an app installed. This provides a very fertile ground for businesses to pitch in their PWA.
-           <br> <br>
-        The following three metrics can be highlighted to understand the importance of PWA in moulding the future web.
-           <br> <br>
-        a. Reach : The mobile web audience has grown at a skyrocketing pace over the last few years. Google has reported that Chrome has whooping 1 billion mobile users compared to the erstwhile 400 million users in 2016. As per Comscore’s report the reach of mobile web is 2.5 times more than that of apps, while considering the top 1000 sites and apps. This is the reason why the decision of Flipkart, Myntra etc. to abandon their website and be ‘app only’ backfired. If we could provide a better experience to a wider audience, we could surely get a competitive edge over the others.
-           <br> <br>
-        b. Acquisition : Another serious concern faced by the mobile apps are their user discoverability compared to websites. The user acquisition cost of web will be 10 times cheaper than that of native apps. With more exposure and low friction for on-boarding, PWA is likely to acquire more users at very less expense.
-           <br> <br>
-        c. Conversion : The seamless end to end user experience even with flaky networks provided by PWA improves the number of successful conversions. Flipkart launched their PWA ‘Flipkart-lite’, which they claim to have delivered an increase in the conversion rate by 70% with lower acquisition cost.
-        
-           <br> <br>
-        To sum up : PWA helps to improve conversions by increasing potential reach with low acquisition costs.
-    </p>
-   <br> <br>
-    <h3>
-        How to get started ?
-    </h3> 
-    <p>
+         <br> <br>
+         To sum up : PWA helps to improve conversions by increasing potential reach with low acquisition costs.
+      </p>
+      <br> <br>
+      <h3>
+         How to get started ?
+      </h3>
+      <p>
 
-        Once you get to know a new technology, the next challenge in-line is the decision to adopt it. Most of the people get into a dilemma at this point. Decision should be driven by your specific business need. The following two cases could help you identify the method that fits you to implement PWA.
-           <br> <br>
-        a) From ground zero
-           
-        Consider the scenario when a company is building a new website or going through a redesign. In this case, building a PWA from ground zero makes sense and is feasible. This will have the business to harness the power of PWA with AMP, service workers, App shell and Web Manifest. For e.g.. According to Ali Express, once they revamped their website as PWA, they were able to increase their conversion rate for new users by 104%, gained 2X more pages visited per session per user across all browsers and 74% increase in time spent per session across all browsers.
-           <br> <br>
-        b) A simple version or A Single feature
-          
-        When building from scratch is not realistic, one can always build a simple version of the website or focus on a single feature that has a high impact for end users. The focus is to deliver a fast, engaging and reliable experience. AirBerlin is an appropriate example in this case. They focussed on the post- booking experience in their PWA. After a passenger has checked in, they can access their journey details and boarding pass even without internet connectivity.
-    </p> 
-        
-   <br> <br>
-    <h3>
-        Challenges in PWA
-    </h3>
-    <p>
+         Once you get to know a new technology, the next challenge in-line is the decision to adopt it. Most of the
+         people get into a dilemma at this point. Decision should be driven by your specific business need. The
+         following two cases could help you identify the method that fits you to implement PWA.
+         <br> <br>
+         a) From ground zero
 
-        There are some challenges in PWA which have to be considered while choosing it.
-           <br> <br>
-        a) Cross Browser Support : While Chrome, Opera, and Samsung’s android browser supports PWA, IE, Edge and Safari are yet to extend their support.
-           <br> <br>
-        b) Limited Functionality: PWA doesn’t have support for any hardware that is not supported by HTML5
-           <br> <br>
-        c) Limited Legitimacy: As there is no central download Store for PWA, they lack in giving a sense of legitimacy and confidence which is usually given by native apps from Play Store/App Store.
-           <br> <br>
-        d) Cross Application Login Support : Native apps have the capability to talk to other apps and authenticate logins (Facebook, Twitter, Google). As a webpage, PWA doesn’t have the capability to communicate with other apps installed.
-           <br> <br>
-        Conclusion
-        We can’t say that PWA will kill Native Apps in the future. But still there is a growing interest for this approach in the community. PWAs are still in their infancy with a lot of challenges to be addressed. Yet, they have the potential to create a shift in the way the web works.
-    </p>
-    </div>
+         Consider the scenario when a company is building a new website or going through a redesign. In this case,
+         building a PWA from ground zero makes sense and is feasible. This will have the business to harness the power
+         of PWA with AMP, service workers, App shell and Web Manifest. For e.g.. According to Ali Express, once they
+         revamped their website as PWA, they were able to increase their conversion rate for new users by 104%, gained
+         2X more pages visited per session per user across all browsers and 74% increase in time spent per session
+         across all browsers.
+         <br> <br>
+         b) A simple version or A Single feature
 
-<script src="./app.js"></script>
+         When building from scratch is not realistic, one can always build a simple version of the website or focus on a
+         single feature that has a high impact for end users. The focus is to deliver a fast, engaging and reliable
+         experience. AirBerlin is an appropriate example in this case. They focussed on the post- booking experience in
+         their PWA. After a passenger has checked in, they can access their journey details and boarding pass even
+         without internet connectivity.
+      </p>
+
+      <br> <br>
+      <h3>
+         Challenges in PWA
+      </h3>
+      <p>
+
+         There are some challenges in PWA which have to be considered while choosing it.
+         <br> <br>
+         a) Cross Browser Support : While Chrome, Opera, and Samsung’s android browser supports PWA, IE, Edge and Safari
+         are yet to extend their support.
+         <br> <br>
+         b) Limited Functionality: PWA doesn’t have support for any hardware that is not supported by HTML5
+         <br> <br>
+         c) Limited Legitimacy: As there is no central download Store for PWA, they lack in giving a sense of legitimacy
+         and confidence which is usually given by native apps from Play Store/App Store.
+         <br> <br>
+         d) Cross Application Login Support : Native apps have the capability to talk to other apps and authenticate
+         logins (Facebook, Twitter, Google). As a webpage, PWA doesn’t have the capability to communicate with other
+         apps installed.
+         <br> <br>
+         Conclusion
+         We can’t say that PWA will kill Native Apps in the future. But still there is a growing interest for this
+         approach in the community. PWAs are still in their infancy with a lot of challenges to be addressed. Yet, they
+         have the potential to create a shift in the way the web works.
+      </p>
+   </div>
+
+   <script src="./app.js"></script>
 </body>
+
 </html>

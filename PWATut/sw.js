@@ -1,6 +1,6 @@
-self.addEventListener('install', function(event){
+self.addEventListener('install', function (event) {
     console.log("SW installed");
-    event.waitUntil(caches.open("static").then(function(cache){
+    event.waitUntil(caches.open("static").then(function (cache) {
         cache.addAll([
             './',
             './index.html',
@@ -10,23 +10,22 @@ self.addEventListener('install', function(event){
             './img/pwa-fast.png',
             './img/pwa-reliable.png'
         ]);
-    }));
+    }).catch(err => console.error(err)));
 });
 
-self.addEventListener('activate', function(){
+self.addEventListener('activate', function () {
     console.log("SW Activated");
 });
 
-self.addEventListener('fetch', function(event){
+self.addEventListener('fetch', function (event) {
     event.respondWith(
-        caches.match(event.request).then(function(res){
-            if(res){
+        caches.match(event.request).then(function (res) {
+            if (res) {
                 return res;
             }
-            else
-            {
+            else {
                 return fetch(event.request);
             }
-        })
+        }).catch(err => console.error(err))
     );
 });

@@ -1,4 +1,10 @@
-body,html{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
     height: 100%;
     margin: 0;
     font-size: 16px;
@@ -9,8 +15,7 @@ body,html{
     background-size: cover;
 }
 
-
-#header{
+#header {
     background: rgb(2, 248, 22);
     color: black;
     text-shadow: 1px 1px white;
@@ -18,18 +23,18 @@ body,html{
     justify-content: space-between;
     align-items: baseline;
     box-shadow: 2px 2px 20px 2px silver;
+    padding-inline: 2em;
 }
 
-button{
+button {
     background: #ffffff;
     border: 1px solid black;
     font-size: 1.5em;
-    margin-right: 2em;
     box-shadow: 1px 1px 10px 1px silver;
     border-radius: 10px;
 }
 
-#main #fast{
+#main #fast {
     background-image: url('./img/pwa-fast.png');
     background-attachment: fixed;
     background-size: cover;
@@ -38,7 +43,7 @@ button{
     height: 100vh;
 }
 
-#main #reliable{
+#main #reliable {
     background-image: url('./img/pwa-reliable.png');
     background-attachment: fixed;
     background-size: cover;
@@ -47,7 +52,7 @@ button{
     height: 100vh;
 }
 
-#main #engaging{
+#main #engaging {
     background-image: url('./img/pwa-engaging.png');
     background-attachment: fixed;
     background-size: cover;
@@ -57,7 +62,7 @@ button{
 }
 
 
-#main h2{
+#main h2 {
     display: flex;
     justify-content: center;
     position: relative;
@@ -69,35 +74,38 @@ button{
     display: block;
 } */
 
-#next{
-    display: none;
-    opacity: 0;
-} 
-
-#dive{
+#next {
     display: none;
     opacity: 0;
 }
 
-h3{
+#dive {
+    display: none;
+    opacity: 0;
+}
+
+h3 {
     text-decoration: underline;
 }
 
-h3, h4, p{
+h3,
+h4,
+p {
     padding: 0px 20px 0px 20px;
     text-align: center;
     margin: auto;
 }
 
 @media (max-width: 700px) {
-    #header{
+    #header {
         line-height: 2em;
         font-size: 0.7em;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    button{
+
+    button {
         margin: auto;
         border-radius: 5px;
         width: 7em;
